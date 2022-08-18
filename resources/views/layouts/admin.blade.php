@@ -20,9 +20,12 @@
     <link rel="stylesheet"
         href="{{ asset('AdminLTE-2/bower_components/bootstrap-daterangepicker/daterangepicker.css') }}">
     <link rel="stylesheet" href="{{ asset('AdminLTE-2/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css') }}">
-
+    <link rel="stylesheet" href="{{ asset('AdminLTE-2/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css') }}">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+    @stack('css')
+
 </head>
 
 <body class="hold-transition skin-purple-light sidebar-mini">
@@ -73,13 +76,14 @@
     <script src="{{ asset('AdminLTE-2/bower_components/jquery-slimscroll/jquery.slimscroll.min.js') }}"></script>
     <script src="{{ asset('AdminLTE-2/bower_components/fastclick/lib/fastclick.js') }}"></script>
     <script src="{{ asset('AdminLTE-2/bower_components/chart.js/Chart.js') }}"></script>
+    <script src="{{ asset('AdminLTE-2/bower_components/datatables.net/js/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('AdminLTE-2/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js') }}"></script>
     <script src="{{ asset('AdminLTE-2/dist/js/adminlte.min.js') }}"></script>
     <script src="{{ asset('AdminLTE-2/dist/js/pages/dashboard.js') }}"></script>
+    <script src="{{ asset('js/validator.min.js') }}"></script>
     <script src="{{ asset('AdminLTE-2/dist/js/demo.js') }}"></script>
-
-    <script>
-
-    </script>
+    
+    @stack('scripts')
 </body>
 
 </html>
